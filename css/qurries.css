@@ -1,0 +1,345 @@
+:root{
+  /* Primary */
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+  
+  /* Neutral */
+  --dark-grayish-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/****************devices with width of 300px or less*******************/
+@media (max-width: 300px) {
+  .footer-right .input-container input{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 180px;
+    padding-left: 20px;
+    margin-right: 10px;
+  }
+  .footer-go-btn{
+    background: var(--bright-red);
+    border-radius: 50px;
+    padding: 11px 30px;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+  }
+}
+
+/****************devices with width of 450px or less*****************/
+@media (max-width: 450px) {
+  header::before{
+    width: 420px !important;  height: 420px !important;
+    background-position: top -70px right -100px;
+  }
+
+  header::after{
+    top: 480px !important;
+    width: 300px !important;  height: 300px !important;
+    background-position: top right -150px;
+  }
+}
+
+/****************devices with width of 600px or less*****************/
+@media (max-width: 600px) {
+  header::after{
+    top: 450px;
+    width: 400px;  height: 400px;
+  }
+}
+
+/****************devices with width of 900px or less******************/
+@media (max-width: 900px){
+  nav ul{
+    width: 90% !important;
+  }
+}
+
+/**************devices with width of 1050px or less*******************/
+@media (max-width: 1050px) {
+  header::before{
+    width: 600px;  height: 600px;
+  }
+  .features-container::before{
+    display: none;
+  }
+}
+
+/*******************devices with width of 1200px or less*******************/
+@media (max-width: 1200px) {
+  .scroll-hidden{
+    overflow-y: hidden;
+  }
+  .menu-btn{
+    display: flex;
+  }
+  nav{
+    padding: 20px 5%;
+  }
+  nav ul{
+    position: fixed;
+    top: -5000px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    background: var(--very-light-gray);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+  }
+  nav ul li{
+    margin: 10px 0;
+  }
+  nav .mobile-menu{
+    top: 100px;
+  }
+  #nav-btn{
+    display: none;
+  }
+}
+
+/****************devices with width of 700px or more*********************/
+@media (min-width: 700px) {
+  nav{
+    padding: 0;
+  }
+  header{
+    padding: 40px 50px 0 50px;
+  }
+  .text{
+    padding: 30px 100px 0;
+  }
+  .features-container{
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 901px) {
+  header::after{
+    display: none;
+  }
+}
+/**********************devices with width of 1000px or more********************/
+@media (min-width: 1000px) {
+  header{
+    padding: 0 100px;
+  }
+  nav{
+    padding: 50px 0;
+  }
+  .intro{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+  .intro img{
+    width: 57%;
+  }  
+  .text{
+    width: 40%;
+    padding: 0;
+    text-align: start;
+  }
+  .text h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  .text p{
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  .features-container{
+    padding: 0 100px;
+  }
+  .testimonials-container{
+    padding: 0 100px;
+  }
+  .testimonials{
+    padding: 0 100px;
+  }
+  .swiper-slide{
+    min-width: 500px;
+  }
+
+  .cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: start;
+    background: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: var(--bright-red);
+    padding: 40px 100px;
+  }
+  .cta h2{
+    width: 500px;
+    margin-bottom: 0;
+  }
+}
+
+/*********************devices with width of 1250px or more*********************/
+@media (min-width: 1250px){
+  .intro img{
+    width: 50%;
+  }
+  .text{
+    width: 40%;
+  }
+  .text h1{
+    font-size: 3rem;
+  }
+  .text p{
+    font-size: 1.1rem;
+    width: 90%;
+  }
+  .features-container{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .features-intro{
+    margin-top: -12px;
+    text-align: start;
+    width: 47%;
+  }
+  .features-intro h2{
+    padding: 0;
+    font-size: 2.2rem;
+  }
+  .features-intro p{
+    width: 66%;
+  }
+  .features-body{
+    margin-top: 0;
+    width: 47%;
+  }
+  .title::before{
+    display: none;
+  }
+  .feature-description{
+    margin-left: 70px;
+    width: 80%;
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 100px;
+  }
+  
+  .footer-left{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-left svg{
+    margin-bottom: 60px;
+  }
+  .footer-left .social-media{
+    margin-bottom: -10px;
+  }
+  .footer-left .social-media a{
+    font-size: 1.8rem;
+    margin: 0 5px;
+  }
+  
+  .footer-center{
+    margin-bottom: 0;
+    width: 35%;
+  }
+  .footer-center div ul li{
+    margin-bottom: 10px;
+  }
+  .footer-center div ul li:last-child{
+    margin-bottom: 0;
+  }
+  
+  .footer-right{
+    margin-bottom: 0;
+  }
+  .footer-right p{
+    display: block;
+    color: var(--dark-grayish-blue);
+    margin-top: 60px;
+  }
+  #text{
+    color: var(--bright-red)
+  }
+  .copyright-statement{
+    display: none;
+  }
+}
+
+/************************devices with width of 1400px or more************************/
+@media (min-width: 1400px){
+  header{
+    padding: 0 200px;
+  }
+  .features-container{
+    padding: 0 200px;
+  }
+  .cta{
+    padding: 40px 200px;
+  }
+  footer{
+    padding: 80px 200px;
+  }
+}
+
+/*************************devices with width of 1500px or more*****************/
+@media (min-width: 1500px){
+  header{
+    padding: 0 250px;
+  }
+  .features-container{
+    padding: 0 250px;
+  }
+  .intro img{
+    height: 550px;
+  }
+  .text p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 77%;
+  }
+  .swiper-slide{
+    max-width: 600px;
+  }
+
+  .cta{
+    padding: 40px 250px;
+  }
+  footer{
+    padding: 80px 250px;
+  }
+}
+
+/******************devices with width of 1650px 0r more********************/
+@media (min-width: 1650px){
+  .text{
+    padding-right: 80px; 
+  }
+  .features-intro{
+    margin-top: -12px;
+    text-align: start;
+    width: 47%;
+  }
+  .features-intro h2{
+    padding: 0;
+    font-size: 2.4rem;
+    width: 90%;
+  }
+  .features-intro p{
+    width: 55%;
+  }
+}
