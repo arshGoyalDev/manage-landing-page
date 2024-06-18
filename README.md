@@ -13,11 +13,6 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-## Links
-
-- [Solution URL](https://www.frontendmentor.io/solutions/manage-responsive-landing-page-YGfVfQDd5)
-- [Live Site URL](https://manage-landing-page-developingweb.vercel.app)
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -27,4 +22,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@developingWeb](https://www.frontendmentor.io/profile/developingWeb)
+- Frontend Mentor - [@arshGoyalDev](https://www.frontendmentor.io/profile/arshGoyalDev)
